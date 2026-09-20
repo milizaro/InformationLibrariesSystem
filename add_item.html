@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Додати видання</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+	<main class="form-container">
+		<form action="#" method="post" enctype="multipart/form-data">
+			<h1 class="form-title">Додати видання</h1>
+			<div class="grid">
+				<div class="field wide">
+					<label for="title">Назва *</label>
+					<input id="title" name="title" type="text" required>
+				</div>
+				<div class="field">
+					<label for="author">Автор *</label>
+					<input id="author" name="author" type="text" required>
+				</div>
+				<div class="field">
+					<label for="publisher">Видавництво *</label>
+					<input id="publisher" name="publisher" type="text" required>
+				</div>
+				<div class="field">
+					<label for="year">Рік видання *</label>
+					<input id="year" name="year" type="number" min="0" max="9999" required>
+				</div>
+				<div class="field">
+					<label for="isbn">ISBN</label>
+					<input id="isbn" name="isbn" type="text">
+				</div>
+				<div class="field">
+					<label for="category">Категорія *</label>
+					<input id="category" name="category" type="text" required>
+				</div>
+				<div class="field">
+					<label for="language">Мова *</label>
+					<select id="language" name="language" required>
+						<option value="">Оберіть мову</option>
+						<option value="uk">Українська</option>
+						<option value="en">Англійська</option>
+						<option value="other">Інша</option>
+					</select>
+				</div>
+				<div class="field">
+					<label for="pages">Кількість сторінок *</label>
+					<input id="pages" name="pages" type="number" min="1" required>
+				</div>
+				<div class="field wide">
+					<label for="description">Опис</label>
+					<textarea id="description" name="description"></textarea>
+				</div>
+				<div class="field wide">
+					<label for="cover">Обкладинка</label>
+					<input id="cover" name="cover" type="file" accept="image/*">
+				</div>
+			</div>
+			<div class="actions">
+				<button class="cancel" type="reset">Очистити</button>
+				<button class="submit" type="submit">Додати</button>
+			</div>
+		</form>
+	</main>
+</body>
+</html>
